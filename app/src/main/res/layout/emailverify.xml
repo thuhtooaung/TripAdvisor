@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:id="@+id/swipeRefreshLayout">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/not_verified"
+            android:id="@+id/verifyEmailNotice"
+            android:layout_margin="20dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#F44336"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pull_down"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/verifyEmailNotice"
+            android:textSize="21sp"
+            android:layout_margin="30dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pulldown"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailVerify"
+            android:text="@string/con_nue"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/retry"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

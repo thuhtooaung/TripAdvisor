@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:id="@+id/logoimage"
+        android:contentDescription="@string/app_name" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/logoimage"
+        android:background="#2196F3">
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/acc"
+            android:textSize="18sp"
+            android:layout_marginBottom="1dp"
+            android:padding="15dp"
+            android:background="#ffffff"/>
+        <TextView
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting"
+            android:textSize="18sp"
+            android:layout_marginBottom="1dp"
+            android:padding="15dp"
+            android:background="#ffffff"/>
+
+        <TextView
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/feed"
+            android:textSize="18sp"
+            android:layout_marginBottom="1dp"
+            android:padding="15dp"
+            android:background="#ffffff"/>
+
+        <TextView
+            android:id="@+id/aboutus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:textSize="18sp"
+            android:layout_marginBottom="1dp"
+            android:padding="15dp"
+            android:background="#ffffff"/>
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chk_version"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="1dp"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/initial"
+        android:background="#ffffff"
+        android:layout_centerHorizontal="true"
+       android:layout_alignParentBottom="true"
+        android:contentDescription="@string/app_name" />
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="go.tripadvisor.com.tripadvisor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".splash"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            `
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".lv_item_click" />
+        <activity
+            android:name=".chatbot"
+            android:label="Chat Bot" />
+        <activity
+            android:name=".aboutus"
+            android:label="About Us" />
+        <activity
+            android:name=".ta_main"
+            android:label="@string/title_activity_ta_main" />
+        <activity
+            android:name=".setting"
+            android:label="Setting" />
+        <activity
+            android:name=".account"
+            android:label="Account" />
+        <activity
+            android:name=".feedback"
+            android:label="Feedback" />
+        <activity
+            android:name=".checkversion"
+            android:label="Version" />
+        <activity android:name=".signup" />
+        <activity android:name=".success" />
+        <activity android:name=".emailverify" />
+        <activity android:name=".docs" />
+        <activity android:name=".readmore"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spimage"
+        android:src="@mipmap/logo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name" />
+    <TextView
+        android:id="@+id/sptv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/loading"
+        android:layout_below="@+id/spimage"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/spbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/retry"
+        android:textColor="#FF1744"
+        android:textColorHighlight="#E040FB"
+        android:background="@drawable/retry"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sptv"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"/>
+</RelativeLayout>
